@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using FluentAutomation;
-using NUnit.Framework;
+﻿using FluentAutomation;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Craftmanship_automationpractice.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class BaseTest : FluentTest
     {
-        [TestFixtureSetUp]
+        [TestInitialize]
         public void TextFixtureSetUp()
         {
             WbTstr.Configure()
-                .UseWebDriver(SeleniumWebDriver.Browser.PhantomJs)
+                .UseWebDriver(SeleniumWebDriver.Browser.Chrome)
                 .BootstrapInstance();
         }
     }

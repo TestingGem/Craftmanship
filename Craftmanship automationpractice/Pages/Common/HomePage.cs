@@ -1,27 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using FluentAutomation;
-using Craftmanship_automationpractice.Pages;
-using Craftmanship_automationpractice.Tests;
+﻿using FluentAutomation;
 
 namespace Craftmanship_automationpractice.Pages.Common
 {
     public class HomePage : BasePage<HomePage>
     {
-        private const string Navigation = "#nav";
-        private const string NavContactLink = "#nav > li:nth-child(4)";
+        private string AlertBar=".alert";
+        private string NewsletterInput="#newsletter-input";
+        private string SubmitButtonNewsletter = "#newsletter_block_left .button";
 
         public HomePage(FluentTest test) : base(test)
         {
-            Url = ConfigurationManager.AppSettings["HomePage"];
-            At = () => I.Assert.Visible(Navigation);
+            //Url = ConfigurationManager.AppSettings["Homepage"];
+            Url = "http://www.mirabeau.nl";
+            //At = () => I.Assert.Visible(NewsletterInput);
         }
 
-        public HomePage ClickNavContactLink()
+        public HomePage InsertNewsletter()
         {
-            I.Click(NavContactLink);
+            I.Enter("@.nl").In(NewsletterInput);
+            I.Click(SubmitButtonNewsletter);
             return this;
         }
+
+        public HomePage Assert()
+        {
+            I.Assert.Visible(AlertBar);
+            return this;
+        }
+
     }
 }

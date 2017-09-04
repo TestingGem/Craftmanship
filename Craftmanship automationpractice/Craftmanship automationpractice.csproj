@@ -39,6 +39,7 @@
       <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\FluentAutomation.SeleniumWebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -52,6 +53,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -70,17 +72,23 @@
   <ItemGroup>
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\Common\HomePage.cs" />
+    <Compile Include="Tests\AppearErrorMessageTest.cs" />
     <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\Feature1\Feature1Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="TestData\acc.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TestData\dev.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -91,6 +99,9 @@
     <Content Include="TestData\tst.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
