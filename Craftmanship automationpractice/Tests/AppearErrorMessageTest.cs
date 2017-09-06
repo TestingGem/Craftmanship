@@ -10,9 +10,9 @@ namespace Craftmanship_automationpractice.Tests
         public void NewsletterSubscription_InvalidEmail_ErrorBar()
         {
             new HomePage(this)
-            .Go();
-            //.InsertNewsletter();
-            //.Assert();    
+            .Go()
+            .InsertNewsletter()
+            .Assert();
         }
     }
 }

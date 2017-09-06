@@ -1,4 +1,5 @@
-﻿using FluentAutomation;
+﻿using System.Configuration;
+using FluentAutomation;
 
 namespace Craftmanship_automationpractice.Pages.Common
 {
@@ -10,8 +11,8 @@ namespace Craftmanship_automationpractice.Pages.Common
 
         public HomePage(FluentTest test) : base(test)
         {
-            //Url = ConfigurationManager.AppSettings["Homepage"];
-            Url = "http://www.mirabeau.nl";
+            Url = ConfigurationManager.AppSettings["Homepage"];
+            //Url = "http://www.mirabeau.nl";
             //At = () => I.Assert.Visible(NewsletterInput);
         }
 
