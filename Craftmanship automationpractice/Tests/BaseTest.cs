@@ -10,7 +10,7 @@ namespace Craftmanship_automationpractice.Tests
         public void TextFixtureSetUp()
         {
             WbTstr.Configure()
-                .UseWebDriver(SeleniumWebDriver.Browser.InternetExplorer)
+                .UseWebDriver(SeleniumWebDriver.Browser.Chrome)
                 .BootstrapInstance();
         }
     }

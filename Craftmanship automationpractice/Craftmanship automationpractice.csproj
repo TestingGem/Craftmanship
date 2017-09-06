@@ -32,16 +32,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAutomation.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\FluentAutomation.Core.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.4.1.26\lib\FluentAutomation.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FluentAutomation.SeleniumWebDriver, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\FluentAutomation.SeleniumWebDriver.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.4.1.26\lib\FluentAutomation.SeleniumWebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.4.1.26\lib\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
@@ -49,23 +49,24 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Polly, Version=2.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\Polly.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.4.1.26\lib\Polly.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WebDriver, Version=2.47.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\WebDriver.dll</HintPath>
+    <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.4.1.26\lib\WebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver.Support, Version=2.47.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20\lib\WebDriver.Support.dll</HintPath>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.1.4.1.26\lib\WebDriver.Support.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
