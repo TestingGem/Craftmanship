@@ -12,8 +12,7 @@ namespace Craftmanship_automationpractice.Pages.Common
         public HomePage(FluentTest test) : base(test)
         {
             Url = ConfigurationManager.AppSettings["Homepage"];
-            //Url = "http://www.mirabeau.nl";
-            //At = () => I.Assert.Visible(NewsletterInput);
+            At = () => I.Assert.Visible(NewsletterInput);
         }
 
         public HomePage InsertNewsletter()
